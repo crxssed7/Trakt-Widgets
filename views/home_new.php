@@ -32,10 +32,10 @@ $quotes = array (
 $ran = array_rand($quotes);
 $single_quote = $quotes[$ran];
 
-$arr = explode("^",$single_quote)
+$arr = explode("^",$single_quote);
 
-$str1 = $arr[0]
-$str2 = $arr[1]
+$str1 = $arr[0];
+$str2 = $arr[1];
 
 ?>
 
