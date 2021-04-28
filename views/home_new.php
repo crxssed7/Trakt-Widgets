@@ -36,7 +36,7 @@ $single_quote = $quotes[$ran];
 
 ?>
 
-<svg id="poster_watched" width="200" height="100" viewBox="0 0 720 198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="poster_watched" width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
     <?php require 'fonts/Exo-2.php'; ?>
