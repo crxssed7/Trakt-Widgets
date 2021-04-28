@@ -53,6 +53,6 @@ $str2 = $arr[1];
     <rect x="0" y="0" width="500" height="250" fill="black" rx="10"/>
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $str1; ?></text>  
 
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $str2; ?></text>  
+    <text x="75%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $str2; ?></text>  
 
 </svg>
