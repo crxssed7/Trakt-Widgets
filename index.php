@@ -5,7 +5,6 @@ require 'control/global.php';
 require 'control/Trakt.php';
 require 'control/TMDB.php';
 require 'control/FanArt.php';
-require 'views/error.php';
 
 // Variables
 Flight::set('flight.views.path', './views');
