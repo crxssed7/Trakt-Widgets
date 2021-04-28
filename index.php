@@ -30,7 +30,7 @@ Flight::route('/@user/@view/@type', function ($user, $view, $type) {
   $fanart = new FanArt("API_KEY");
 
   if ($type == "poster" && $view == "profile") { // Poster Profile
-    require 'views/poster_profile.php';
+    require 'views/home_new.php';
   }
   elseif ($type == "poster" && $view == "watched") { // Poster Watched
     require 'views/poster_watched.php';
