@@ -43,9 +43,6 @@ $single_quote = $quotes[$ran];
     text {
       font-family: 'Exo 2', sans-serif;
     }
-    rect {
-        border-radius: 5px;
-    }
     </style>
   </defs>
 
@@ -57,7 +54,7 @@ $single_quote = $quotes[$ran];
         </rect>
         
     </g> -->
-    <rect x="0" y="0" width="500" height="250" fill="black"/>
+    <rect x="0" y="0" width="500" height="250" fill="black" rx="5/>
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $single_quote; ?></text>  
 
 </svg>
