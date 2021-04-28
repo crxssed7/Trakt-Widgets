@@ -45,15 +45,11 @@ $single_quote = $quotes[$ran];
       font-family: 'Exo 2', sans-serif;
       
     }
-    tspan {
-      fill: #bfbfbf;
-      font-size: 80%;
-    }
     </style>
   </defs>
 
   <!-- Text -->
-  <rect id="text" width="200" height="100" fill="black">
+  <rect id="text" width="500" height="250" fill="black">
     <text x="50%" y="50%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
   </rect>
 
