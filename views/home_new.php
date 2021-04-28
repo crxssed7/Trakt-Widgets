@@ -50,12 +50,13 @@ $single_quote = $quotes[$ran];
 
   <!-- Text -->
   
-    <g id="text" width="200" height="150">
+   <!-- <g id="text" width="200" height="150">
         <rect width="200" height="150" fill="black" > 
-            <text x="50%" y="50%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
+            <text x="50%" y="50%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"></text>
         </rect>
         
-    </g>
- 
+    </g> -->
+    <rect x="0" y="0" width="200" height="100" stroke="red" stroke-width="3px" fill="white"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"><?php echo $single_quote; ?></text>  
 
 </svg>
