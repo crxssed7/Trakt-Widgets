@@ -1,74 +1,76 @@
 <?php
+require 'flight/Flight.php';
+require 'language/language.php';
+require 'control/global.php';
+require 'control/Trakt.php';
+require 'control/TMDB.php';
+require 'control/FanArt.php';
+require 'views/error.php';
 
-$quotes = array (
-    "Ooohhhhhhhhh!!!!!"
-    "I'm Pickle Rickkk!!!!"
-    "Bazinga!"
-    "I am the danger, I am the one who knocks."
-    "Nobody exists on purpose."
-    "Bird is the word."
-    "You shall not pass!"
-    "Wubalubadubdub!"
-    "D'oh!"
-    "Cool cool cool cool cool cool cool cool."
-    "We're all goofy goobers."
-    "That's what she said."
-    "Oh my God, they killed Kenny!"
-    "Oh my God, its happening. Everybody stay calm!"
-    "Oh hello, Jackie."
-    "I'm gonna wreck it!"
-    "Jolly good show!"
-    "Hamboninggggggg."
-    "You were the chosen one!"
-    "ARE YOU WILLING TO FIGHT?!"
-    "Going outside is highly overrated."
-    "Dude, am I in the frame?"
-    "Hoard toilet paper, hoard it like it’s gold, cause it is."
-    "I don't have friends, I've just got one"
-    "Bacon Pancakes, making Bacon Pancakes!"
-    "This is the way."
-    "YUMYAN OWNS YOU ALL!"
-    "Here's to another lousy millennium 🍻"
-);
+// Variables
+Flight::set('flight.views.path', './views');
 
-$ran = array_rand($quotes);
-$single_quote = $quotes[$ran];
+// Routes
+Flight::route('/', function () {
+  Flight::render('home');
+});
 
-?>
+Flight::route('/@user/@view/@type', function ($user, $view, $type) {
+  $query = Flight::request()->query;
 
-<svg id="poster_watched" width="720" height="198" viewBox="0 0 720 198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <style>
-    <?php require 'fonts/Exo-2.php'; ?>
-    text,
-    tspan {
-      font-family: 'Exo 2', sans-serif;
-    }
-    tspan {
-      fill: #bfbfbf;
-      font-size: 80%;
-    }
-    </style>
-  </defs>
+  header('Cache-Control: no-cache');
+  header('Content-type: image/svg+xml');
 
-  <!-- Sfondo -->
-  <rect id="sfondo" x="0" y="0" width="100%" height="100%" fill="#ffffff" />
+  if (!$user || !$view || !$type) {
+    error("MISSING_INFORMATION", 720, 480); }
+  $lang = isset($query['language']) ? $query['language'] : "en";
 
-  <!-- Image -->
-  <g id="image">
-    <rect x="0" y="0" width="100%" height="74%" fill="#f2f2f2" />
-    <image x="0" y="0" width="100%" xlink:href="" />
-  </g>
+  $trakt = new Trakt($user, "CLIENT_ID");
+  $tmdb = new TMDB("API_KEY");
+  $fanart = new FanArt("API_KEY");
 
-  <!-- Text -->
-  <g id="text">
-    <rect x="0" y="74%" width="100%" height="26%" fill="#1c1c1c" />
+  if ($type == "poster" && $view == "profile") { // Poster Profile
+    require 'views/home_new.php';
+  }
+  elseif ($type == "poster" && $view == "watched") { // Poster Watched
+    require 'views/poster_watched.php';
+  }
+  elseif ($type == "poster" && $view == "watching") { // Poster Watching
+    require 'views/poster_watching.php';
+  }
 
-    <rect x="0" y="74%" width="7%" height="26%" fill="#737373" />
-    <image x="0.6%" y="76.5%" width="5.8%" xlink:href="" />
+  elseif ($type == "card" && $view == "watched") { // Card Watched
+    require 'views/card_watched.php';
+  }
+  elseif ($type == "card" && $view == "watching") { // Card Watching
+    require 'views/card_watching.php';
+  }
 
-    <text x="9%" y="83.9%" fill="#bfbfbf" font-size="14" dominant-baseline="bottom" text-anchor="left"></text>
-    <text x="9%" y="94.9%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
-  </g>
+  elseif ($type == "banner" && $view == "watched") { // Banner Watched
+    require 'views/banner_watched.php';
+  }
+  elseif ($type == "banner" && $view == "watching") { // Banner Watching
+    require 'views/banner_watching.php';
+  }
 
-</svg>
+  elseif ($type == "fanart" && $view == "watched") { // FanArt Watched
+    require 'views/fanart_watched.php';
+  }
+  elseif ($type == "fanart" && $view == "watching") { // FanArt Watching
+    require 'views/fanart_watching.php';
+  }
+
+  elseif ($type == "text" && $view == "watched") { // Text Watched
+    require 'views/text_watched.php';
+  }
+  elseif ($type == "text" && $view == "watching") { // Text Watching
+    require 'views/text_watching.php';
+  }
+
+  else {
+    error("UNDEFINED_VIEW_TYPE", 720, 480);
+  }
+
+});
+
+Flight::start();
