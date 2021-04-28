@@ -54,12 +54,6 @@ $single_quote = $quotes[$ran];
   <!-- Sfondo -->
   <rect id="sfondo" x="0" y="0" width="100%" height="100%" fill="#ffffff" />
 
-  <!-- Image -->
-  <g id="image">
-    <rect x="0" y="0" width="100%" height="74%" fill="#f2f2f2" />
-    <image x="0" y="0" width="100%" xlink:href="" />
-  </g>
-
   <!-- Text -->
   <g id="text">
     <rect x="0" y="74%" width="100%" height="26%" fill="#1c1c1c" />
