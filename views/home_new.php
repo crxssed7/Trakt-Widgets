@@ -56,11 +56,6 @@ $single_quote = $quotes[$ran];
 
   <!-- Text -->
   <g id="text">
-    <rect x="0" y="74%" width="100%" height="26%" fill="#1c1c1c" />
-
-    <rect x="0" y="74%" width="7%" height="26%" fill="#737373" />
-    <image x="0.6%" y="76.5%" width="5.8%" xlink:href="" />
-
     <text x="9%" y="94.9%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
   </g>
 
