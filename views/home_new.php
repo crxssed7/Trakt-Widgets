@@ -36,7 +36,7 @@ $single_quote = $quotes[$ran];
 
 ?>
 
-<svg id="poster_watched" width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="poster_watched" width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
     <?php require 'fonts/Exo-2.php'; ?>
@@ -55,7 +55,7 @@ $single_quote = $quotes[$ran];
         </rect>
         
     </g> -->
-    <rect x="0" y="0" width="200" height="100" stroke-width="3px" fill="black"/>
+    <rect x="0" y="0" width="500" height="250" stroke-width="3px" fill="black"/>
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $single_quote; ?></text>  
 
 </svg>
