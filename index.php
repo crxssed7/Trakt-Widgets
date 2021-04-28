@@ -15,7 +15,7 @@ Flight::route('/', function () {
   Flight::render('home');
 });
 
-Flight::route('/tv', function () {
+Flight::route('/quote', function () {
   $query = Flight::request()->query;
 
   header('Cache-Control: no-cache');
