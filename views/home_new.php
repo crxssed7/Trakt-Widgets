@@ -43,6 +43,7 @@ $single_quote = $quotes[$ran];
     text,
     tspan {
       font-family: 'Exo 2', sans-serif;
+      
     }
     tspan {
       fill: #bfbfbf;
@@ -51,12 +52,9 @@ $single_quote = $quotes[$ran];
     </style>
   </defs>
 
-  <!-- Sfondo -->
-  <rect id="sfondo" x="0" y="0" width="100%" height="100%" fill="#ffffff" />
-
   <!-- Text -->
-  <g id="text">
-    <text x="9%" y="94.9%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
+  <g id="text" width="200" height="100">
+    <text x="50%" y="50%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
   </g>
 
 </svg>
