@@ -34,7 +34,7 @@ $ran = array_rand($quotes);
 $single_quote = $quotes[$ran];
 ?>
 
-<svg>
+<svg id="tv-quote-parent" width="720" height="198" viewBox="0 0 720 198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="text">
         <rect x="0" y="74%" width="100%" height="26%" fill="#1c1c1c" />
 
