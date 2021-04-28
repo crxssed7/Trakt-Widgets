@@ -36,7 +36,6 @@ $single_quote = $quotes[$ran];
 
 ?>
 
-<div>
 <svg id="poster_watched" width="720" height="198" viewBox="0 0 720 198" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
@@ -73,4 +72,3 @@ $single_quote = $quotes[$ran];
   </g>
 
 </svg>
-</div>
