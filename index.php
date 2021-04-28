@@ -1,10 +1,6 @@
 <?php
 require 'flight/Flight.php';
 require 'language/language.php';
-require 'control/global.php';
-require 'control/Trakt.php';
-require 'control/TMDB.php';
-require 'control/FanArt.php';
 
 // Variables
 Flight::set('flight.views.path', './views');
