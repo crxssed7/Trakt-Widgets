@@ -35,7 +35,11 @@ $single_quote = $quotes[$ran];
 ?>
 
 <svg>
-    <rect>
-        <text><?php echo $single_quote; ?></text>
-    </rect>
+    <g id="text">
+        <rect x="0" y="74%" width="100%" height="26%" fill="#1c1c1c" />
+
+        <rect x="0" y="74%" width="7%" height="26%" fill="#737373" />
+
+        <text x="9%" y="94.9%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
+    </g>
 </svg>
