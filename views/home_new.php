@@ -32,6 +32,11 @@ $quotes = array (
 $ran = array_rand($quotes);
 $single_quote = $quotes[$ran];
 
+$arr = explode("\n",$single_quote)
+
+$str1 = $arr[0]
+$str2 = $arr[1]
+
 ?>
 
 <svg id="poster_watched" width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -46,6 +51,6 @@ $single_quote = $quotes[$ran];
 
     <!-- Text -->
     <rect x="0" y="0" width="500" height="250" fill="black" rx="10"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $single_quote; ?></text>  
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $str1; ?></text>  
 
 </svg>
