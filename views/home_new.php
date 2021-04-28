@@ -1,33 +1,33 @@
 <?php
 
 $quotes = array (
-    "Ooohhhhhhhhh!!!!!"
-    "I'm Pickle Rickkk!!!!"
-    "Bazinga!"
-    "I am the danger, I am the one who knocks."
-    "Nobody exists on purpose."
-    "Bird is the word."
-    "You shall not pass!"
-    "Wubalubadubdub!"
-    "D'oh!"
-    "Cool cool cool cool cool cool cool cool."
-    "We're all goofy goobers."
-    "That's what she said."
-    "Oh my God, they killed Kenny!"
-    "Oh my God, its happening. Everybody stay calm!"
-    "Oh hello, Jackie."
-    "I'm gonna wreck it!"
-    "Jolly good show!"
-    "Hamboninggggggg."
-    "You were the chosen one!"
-    "ARE YOU WILLING TO FIGHT?!"
-    "Going outside is highly overrated."
-    "Dude, am I in the frame?"
-    "Hoard toilet paper, hoard it like it’s gold, cause it is."
-    "I don't have friends, I've just got one"
-    "Bacon Pancakes, making Bacon Pancakes!"
-    "This is the way."
-    "YUMYAN OWNS YOU ALL!"
+    "Ooohhhhhhhhh!!!!!",
+    "I'm Pickle Rickkk!!!!",
+    "Bazinga!",
+    "I am the danger, I am the one who knocks.",
+    "Nobody exists on purpose.",
+    "Bird is the word.",
+    "You shall not pass!",
+    "Wubalubadubdub!",
+    "D'oh!",
+    "Cool cool cool cool cool cool cool cool.",
+    "We're all goofy goobers.",
+    "That's what she said.",
+    "Oh my God, they killed Kenny!",
+    "Oh my God, its happening. Everybody stay calm!",
+    "Oh hello, Jackie.",
+    "I'm gonna wreck it!",
+    "Jolly good show!",
+    "Hamboninggggggg.",
+    "You were the chosen one!",
+    "ARE YOU WILLING TO FIGHT?!",
+    "Going outside is highly overrated.",
+    "Dude, am I in the frame?",
+    "Hoard toilet paper, hoard it like it’s gold, cause it is.",
+    "I don't have friends, I've just got one",
+    "Bacon Pancakes, making Bacon Pancakes!",
+    "This is the way.",
+    "YUMYAN OWNS YOU ALL!",
     "Here's to another lousy millennium 🍻"
 );
 
@@ -67,7 +67,6 @@ $single_quote = $quotes[$ran];
     <rect x="0" y="74%" width="7%" height="26%" fill="#737373" />
     <image x="0.6%" y="76.5%" width="5.8%" xlink:href="" />
 
-    <text x="9%" y="83.9%" fill="#bfbfbf" font-size="14" dominant-baseline="bottom" text-anchor="left"></text>
     <text x="9%" y="94.9%" fill="#e6e6e6" font-size="20" dominant-baseline="bottom" text-anchor="left"><?php echo $single_quote; ?></text>
   </g>
 
