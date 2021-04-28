@@ -56,6 +56,6 @@ $single_quote = $quotes[$ran];
         
     </g> -->
     <rect x="0" y="0" width="200" height="100" stroke-width="3px" fill="black"/>
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"><?php echo $single_quote; ?></text>  
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"><?php echo $single_quote; ?></text>  
 
 </svg>
