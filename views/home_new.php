@@ -26,7 +26,10 @@ $quotes = array (
     "Bacon Pancakes, making Bacon Pancakes!^- Jake, Adventure Time",
     "This is the way.^- The Mandalorian",
     "YUMYAN OWNS YOU ALL!^- Yumyan, Kipo and the age of Wonderbeasts",
-    "Here's to another lousy millennium 🍻^- Phillip J Fry, Futurama"
+    "Here's to another lousy millennium 🍻^- Phillip J Fry, Futurama",
+    "You were my brother Anakin!^- Obi-Wan Kenobi, Star Wars",
+    "It's over Anakin, I have the high ground!^- Obi-Wan Kenobi, Star Wars",
+    "General Kenobi!!!!^- General Grievous, Star Wars"
 );
 
 $ran = array_rand($quotes);
