@@ -22,7 +22,7 @@ $quotes = array (
     "Going outside is highly overrated^- Anorak, Ready Player One",
     "Dude, am I in the frame?^- Soos, Gravity Falls",
     "Bacon Pancakes, making Bacon Pancakes!^- Jake, Adventure Time",
-    "This is the way.^- The Mandalorian",
+    "This is the way.^- Din Djarin, The Mandalorian",
     "YUMYAN OWNS YOU ALL!^- Yumyan, Kipo and the age of Wonderbeasts",
     "Here's to another lousy millennium 🍻^- Phillip J Fry, Futurama",
     "You were my brother Anakin!^- Obi-Wan Kenobi, Star Wars",
