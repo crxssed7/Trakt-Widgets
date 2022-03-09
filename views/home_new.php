@@ -30,7 +30,8 @@ $quotes = array (
     "General Kenobi!!!!^- General Grievous, Star Wars",
     "Be careful what you wish for, Parker^- Dr. Strange, Spider-Man: No Way Home",
     "I am inevitable^- Thanos, Avengers: Endgame",
-    "I, am Iron Man^- Tony Stark, Avengers: Endgame"
+    "I, am Iron Man^- Tony Stark, Avengers: Endgame",
+    "Things used to be awesome, but now they're kinda terrifying^- Wade Watts, Ready Player One"
 );
 
 $ran = array_rand($quotes);
